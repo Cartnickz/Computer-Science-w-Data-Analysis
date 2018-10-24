@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;percent&apos; in &apos;DiceSimulation.main(...)&apos; to &apos;twoPlaces&apos;&#x0D;&#x0A;- Original project: &apos;ChapterThreeLab&apos;&#x0D;&#x0A;- Original element: &apos;DiceSimulation.main(String[]).percent&apos;&#x0D;&#x0A;- Renamed element: &apos;percent&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;percent&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{DiceSimulation.java[DiceSimulation~main~\[QString;@percent!258!307!272!278!QDecimalFormat;!0!false" name="twoPlaces" references="true" stamp="1539187401682" version="1.0"/>
+</session>
