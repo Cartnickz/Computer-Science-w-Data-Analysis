@@ -31,5 +31,6 @@ public class Guessing {
 			System.out.println("\nNumber of guesses: " + numGuesses);
 
 		}
+		scan.close();
 	}
 }

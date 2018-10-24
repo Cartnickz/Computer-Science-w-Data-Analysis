@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.Random;
+//import java.text.NumberFormat;
+//import java.util.Random;
 import java.util.Scanner;
 
 public class ChapterTwoNotes {
@@ -34,10 +34,10 @@ public class ChapterTwoNotes {
 
 		//Data Conversion
 		//Assignment conversion (Integer saved as double
-		double number = 6;
+		//double number = 6;
 
 		//Arithmetic conversion (3 is converted into a float)
-		double sum = 3 + 4.5; 
+		//double sum = 3 + 4.5; 
 		//Casting
 		int total = 22;
 		int count = 7;
@@ -59,10 +59,10 @@ public class ChapterTwoNotes {
 		//System.out.println(0 % 7);
 
 		//Creating an object reference variable
-		String hometown; //creates the object reference variable
-		String savingsAccount = new String("Zach's"); //creates the reference variable AND the object itself
+		//String hometown; //creates the object reference variable
+		//String savingsAccount = new String("Zach's"); //creates the reference variable AND the object itself
 		//String [object name] = new String(parameter);
-		String checkingAccount = "Dude's"; //shorthand way
+		//String checkingAccount = "Dude's"; //shorthand way
 		String favFood = new String("burger");
 		String favFood2 = new String("pizza");
 		String favFood3 = new String("burger");
@@ -82,17 +82,17 @@ public class ChapterTwoNotes {
 		System.out.println(favFood5.substring(20, 33)); //String substring (int offset, int endIndex)
 
 		String phrase = new String ("Change is inevitable");
-		String mutation1, mutation2, mutation3, mutation4;
+		//String mutation1, mutation2, mutation3, mutation4;
 
 		System.out.println("Original String: \"" + phrase + "\"");
 		System.out.println("Length of String: " + phrase.length());
 
 		//Created an object
-		Random generator = new Random();
+		//Random generator = new Random();
 
 		//ObjectName.Method()
-		int random1;
-		double random2;
+		//int random1;
+		//double random2;
 
 		//nextInt(n) creates a number from 0 to n (basically defines the range)
 //		random1 = generator.nextInt(10);
@@ -234,6 +234,8 @@ public class ChapterTwoNotes {
 		System.out.println ("The circle's area: " + fmt.format(area));
 		System.out.println ("The circle's circumference: "
 				+ fmt.format(circumference));
+		
+		scan.close();
 	}
 
 }

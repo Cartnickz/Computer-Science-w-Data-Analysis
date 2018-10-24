@@ -34,10 +34,12 @@ public class PalindromeTester {
 			} else {
 				System.out.println ("That string IS a palindrome.");
 			}
-				
+
 			System.out.println();
 			System.out.print ("Test another palindrome (y/n)? ");
 			another = scan.nextLine();
 		}
+		
+		scan.close();
 	}
 }

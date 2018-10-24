@@ -36,5 +36,7 @@ public class Multiples
          if (count % PER_LINE == 0)
             System.out.println();
       }
+      
+      scan.close();
    }
 }
