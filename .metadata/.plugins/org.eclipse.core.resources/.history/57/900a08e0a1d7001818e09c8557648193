@@ -42,7 +42,6 @@ public class Roulette {
 				}
 			}
 			
-			
 			if (money <= 0) {
 				loss++;
 			} else {

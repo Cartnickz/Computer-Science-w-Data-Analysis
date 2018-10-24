@@ -10,7 +10,6 @@ public class Roulette {
 		int moneyStart, bet, money = 0;
 		int finalResult = 0;
 		int numSims;
-		int loss = 0, win = 0;
 		
 		//ask user for the amount of simulations, starting money, and bet per spin
 		Scanner input = new Scanner(System.in);
@@ -41,19 +40,12 @@ public class Roulette {
 					money += 36 * bet;
 				}
 			}
-			
-			
-			if (money <= 0) {
-				loss++;
-			} else {
-				win++;
-			}
 			finalResult += money;
-			
 			if (simulation % 250 == 0) {
 				System.out.println("Simuation Progress: " + simulation);
 			}
-
+			
+			
 		}
 		
 		double moneyLeft = finalResult/numSims;
@@ -61,7 +53,6 @@ public class Roulette {
 		
 		System.out.println("\nAverage money left: " + moneyText.format(moneyLeft));
 		System.out.println("Average Percent Gain or Loss: " + percent.format(avgChange));
-		System.out.println("Losses: "  + loss);
 
 		
 //		1.	Use a Scanner object to instead ask the user for the money started with, the bet per spin, and the number of simulations

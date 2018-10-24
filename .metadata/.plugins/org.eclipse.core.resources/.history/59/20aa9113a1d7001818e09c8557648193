@@ -41,19 +41,17 @@ public class Roulette {
 					money += 36 * bet;
 				}
 			}
+			finalResult += money;
 			
+			if (simulation % 250 == 0) {
+				System.out.println("Simuation Progress: " + simulation);
+			}
 			
 			if (money <= 0) {
 				loss++;
 			} else {
 				win++;
 			}
-			finalResult += money;
-			
-			if (simulation % 250 == 0) {
-				System.out.println("Simuation Progress: " + simulation);
-			}
-
 		}
 		
 		double moneyLeft = finalResult/numSims;
