@@ -103,44 +103,4 @@ public class Review {
  *		3.12 - An infinite loop is caused by a loop startment that never breaks out of the condition
  *				it tests for
  *		3.13 - A for loop is best for loops with a fixed amount of reruns
- *
- * Multiple Choice
- * 		3.1 E
- * 		3.2 D "no"
- * 		3.3 E
- * 		3.4 E
- * 		3.5 C
- * 		3.6 
- * 		3.7 B
- * 		3.8 C
- * 		3.9 B
- * 		3.10 A
- * 
- * T/F
- * 		3.1 T
- * 		3.2 F
- * 		3.3 F
- * 		3.4 F
- * 		3.5 T
- * 		3.6 F
- * 		3.7 T
- * 		3.8 T
- * 		3.9 F
- * 
- * Short Answer
- * 		3.3 You must use an == not an assignment operator
- * 		3.4 "apple"
- * 		3.5 "lime", "grape"
- * 		3.7 it produces even nubers from 2-20
- * 		3.8 it produces every other number from 0 to 200
- * 		3.9 it prodeuces every number from 200 to 0 that is not divisible by four
- * 		3.10 for (int num == 1; num < 20; num++)
- * 
- * AP
- *		3.1 D
- *		3.2 A
- *		3.3 A
- *		3.4 E
- *		3.5 D
- *		3.6 C
  */
