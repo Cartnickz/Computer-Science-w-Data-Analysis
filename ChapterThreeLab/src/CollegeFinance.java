@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class CollegeFinance {
 	public static void main(String[] args) {
-		
+
 		Scanner input = new Scanner(System.in);
 		NumberFormat money = NumberFormat.getCurrencyInstance();
 		NumberFormat percent = NumberFormat.getPercentInstance();
@@ -34,7 +34,7 @@ public class CollegeFinance {
 				fees = 0, other = 0, annualCost = 0, 
 				fourYearCost = 0; 
 
-				System.out.println("\nWould you like to use costs from Vanderbilt? (Y for yes)");
+		System.out.println("\nWould you like to use costs from Vanderbilt? (Y for yes)");
 		String preset = input.next();
 
 		if (preset.equalsIgnoreCase("Y")) {
@@ -61,42 +61,43 @@ public class CollegeFinance {
 		System.out.println("\nWould you like to use Vanderbilt's annual increase (2.6%)?: ");
 		String defaultRise = input.next();
 		double tuitionRise = 0;
-		
+
 		if (defaultRise.equalsIgnoreCase("Y")) {
 			tuitionRise = 0.026;
 		} else {
 			System.out.println("\nWhat is the average annual rate of increase in tuition (%)? ");
 			tuitionRise = input.nextDouble()/100;
 		}
-		
+
 		fourYearCost = annualCost;
-		
+
 		System.out.println("\nYear 1 Cost: " + annualCost);
 		System.out.println("Avg. Tuition Rise per year: " + tuitionRise);
-		
+
 		for (int i = 1; i < 4; i++) {
 			fourYearCost = fourYearCost + (annualCost * Math.pow((1 + tuitionRise), i));
 		}
 
 		System.out.println(money.format(fourYearCost));
-		
+
 		//Calculate Loan Interest
 		System.out.println("\nWhat is the interest on your loan?: ");
 		double monthlyInterest = input.nextDouble()/100;
-		
+
 		System.out.println("How long (months) will you pay off your loan?: ");
 		int loanLength = input.nextInt();
-		
+
 		double loanInterest = 0;
-		
+
 		for (double p = 0.20; p <= 1; p += 0.20) {
-				loanInterest = ((fourYearCost * p) * Math.pow(1 + (monthlyInterest / 12), loanLength));
-				System.out.println("For a " + money.format(fourYearCost * p) + " loan at " 
-						+ percent.format(monthlyInterest) + " interest with a pay off period of "
-						+ loanLength + " months, you would pay a total of " + money.format(loanInterest));
-					
+			loanInterest = ((fourYearCost * p) * (monthlyInterest / 12) * loanLength) 
+					/ (1 - Math.pow(1 + monthlyInterest / 12, -loanLength));
+			System.out.println("\nFor a " + money.format(fourYearCost * p) + " loan at " 
+					+ (monthlyInterest * 100) + "% interest with a pay off period of "
+					+ loanLength + " months, you would pay a total of " + money.format(loanInterest)
+					+ ".\nYour Monthly Payment is: " + money.format(loanInterest / loanLength));
 		}
 		
-
+		System.out.println();
 	}
 }
