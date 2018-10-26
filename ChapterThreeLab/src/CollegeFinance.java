@@ -6,6 +6,7 @@ public class CollegeFinance {
 		
 		Scanner input = new Scanner(System.in);
 		NumberFormat money = NumberFormat.getCurrencyInstance();
+		NumberFormat percent = NumberFormat.getPercentInstance();
 
 		double borrowed, interestRate, amount;
 		int months;
@@ -81,12 +82,20 @@ public class CollegeFinance {
 		
 		//Calculate Loan Interest
 		System.out.println("\nWhat is the interest on your loan?: ");
-		double loanInterest = input.nextDouble();
+		double monthlyInterest = input.nextDouble()/100;
 		
-		System.out.println("How long will you pay off your loan?: ");
+		System.out.println("How long (months) will you pay off your loan?: ");
 		int loanLength = input.nextInt();
 		
-		//double monthlyInterest = (fourYearCost / loanLength) * (1 + );
+		double loanInterest = 0;
+		
+		for (double p = 0.20; p <= 1; p += 0.20) {
+				loanInterest = ((fourYearCost * p) * Math.pow(1 + (monthlyInterest / 12), loanLength));
+				System.out.println("For a " + money.format(fourYearCost * p) + " loan at " 
+						+ percent.format(monthlyInterest) + " interest with a pay off period of "
+						+ loanLength + " months, you would pay a total of " + money.format(loanInterest));
+					
+		}
 		
 
 	}
