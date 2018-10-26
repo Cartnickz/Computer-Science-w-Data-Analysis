@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.126+Z:\Eclipse_Workspace\.metadata\.plugins\org.eclipse.jdt.core
 2248761268.index
 2944582769.index
@@ -5,4 +6,9 @@ INDEX VERSION 1.126+Z:\Eclipse_Workspace\.metadata\.plugins\org.eclipse.jdt.core
 3262664798.index
 2960426840.index
 2940096248.index
+=======
+INDEX VERSION 1.131+C:\Users\Zach\Documents\GitHub\Computer-Science-w-Data-Analysis\.metadata\.plugins\org.eclipse.jdt.core
+1671615893.index
+3262664798.index
+>>>>>>> 570fcc242092a0aaf62a59137ba79329d4125346
 3898895788.index

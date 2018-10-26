@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=Z\:\\Eclipse_Workspace\\.git;Z\:\\git\\Computer-Science-Java\\.git;Z\:\\MATESRobotics2018\\.git;
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\Zach\\Documents\\GitHub\\Computer-Science-w-Data-Analysis\\.git;Z\:\\Eclipse_Workspace\\.git;Z\:\\git\\MATESRobotics2018\\.git;Z\:\\MATESRobotics2018\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;Z\:\\Eclipse_Workspace\\.git;Z\:\\git\\MATESRobotics2018\\.git;Z\:\\MATESRobotics2018\\.git;
+>>>>>>> 570fcc242092a0aaf62a59137ba79329d4125346
 eclipse.preferences.version=1
