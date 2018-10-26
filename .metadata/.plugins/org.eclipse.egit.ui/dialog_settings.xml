@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/adamgamba/Computer-Science-Java.git"/>
 		<item value="https://github.com/matesrobotics/MATESRobotics2018.git"/>
 	</list>
 	<section name="GitImportWizard">
