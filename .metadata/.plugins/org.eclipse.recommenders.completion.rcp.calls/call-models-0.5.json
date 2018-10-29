@@ -3,5 +3,10 @@
     "coordinate": "jre:jre:zip:call:1.0.0",
     "location": "C:\\Program Files\\Java\\jre1.8.0_172\\lib\\rt.jar",
     "status": "RESOLVED"
+  },
+  "Z:\\Eclipse_Workspace\\Chapter 4 Dog Project\\src": {
+    "location": "Z:\\Eclipse_Workspace\\Chapter 4 Dog Project\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027Z:\\Eclipse_Workspace\\Chapter 4 Dog Project\\src\u0027. Skipped."
   }
 }
