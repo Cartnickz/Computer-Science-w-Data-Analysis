@@ -28,4 +28,9 @@ public class Student {
 	public String getName() {
 		return studentName;
 	}
+	
+	public String toString(){
+		return "Name: " + studentName + "\tTest 1: " + testScore1 + "\tTest 2: " + testScore2;
+	}
+	
 }

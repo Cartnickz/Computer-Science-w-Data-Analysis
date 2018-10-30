@@ -17,5 +17,8 @@ public class Grades {
 		
 		//print average for Mike
 		System.out.println(student2.getAverage());
+		
+		System.out.println(student1);
+		System.out.println(student2);
 	}
 }
