@@ -8,7 +8,7 @@ public class Dog {
 	private int weight;
 	
 	
-	//contructor - initializes object; MUST be public and MUST match class name
+	//constructor - initializes object; MUST be public and MUST match class name
 	public Dog(String name, String owner, int age, int weight ) { // formal parameters - must give class these things in this order 
 		this.name = name; //take input user gave me and set it to those instance variables
 		this.owner = owner;

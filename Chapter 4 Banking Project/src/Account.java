@@ -31,14 +31,13 @@ public class Account {
 	//  into the account.
 	//-----------------------------------------------------------------
 	public void deposit (double amount) {
-		if (amount < 0)  // deposit value is negative
-		{
+		if (amount < 0) { // deposit value is negative
 			System.out.println ();
 			System.out.println ("Error: Deposit amount is invalid.");
 			System.out.println (acctNumber + "  " + fmt.format(amount));
-		}
-		else
+		} else {
 			balance = balance + amount;
+		}
 	}
 
 	//-----------------------------------------------------------------
@@ -70,9 +69,8 @@ public class Account {
 	//-----------------------------------------------------------------
 	//  Adds interest to the account and returns the new balance.
 	//-----------------------------------------------------------------
-	public double addInterest () {
+	public void addInterest () {
 		balance += (balance * RATE);
-		return balance;
 	}
 
 	//-----------------------------------------------------------------
