@@ -16,6 +16,14 @@ public class Dog {
 		this.weight = weight;
 	}
 	
+	//overloading the constructor
+	public Dog(String name, int age, int weight ) { // formal parameters - must give class these things in this order 
+		this.name = name; //take input user gave me and set it to those instance variables
+		this.owner = "up for adoption";
+		this.age = age;
+		this.weight = weight;
+	}
+	
 	//writing a method
 	//if a method is private, it can only be found in this class
 	//public allows the class to be seen anywhere
@@ -30,6 +38,13 @@ public class Dog {
 			System.out.println("woof");
 		} else {
 			System.out.println("yeet");
+		}
+	}
+	
+	//overloading a method
+	public void bark(int times) {
+		for (int i = 1; i <= times; i++) {
+			System.out.println("Bark!");
 		}
 	}
 	

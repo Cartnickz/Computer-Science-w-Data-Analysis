@@ -8,6 +8,7 @@ public class DogTester {
 		Dog kylerDog = new Dog("Kylerito", "Kyler", 10, 60);
 		Dog adamDog = new Dog("Adamito", "Adam", 12, 35);
 		Dog zachDog = new Dog("Harper", "Zach", 9, 40);
+		Dog sarahDog = new Dog("Rex", 5, 20);
 		
 		kylerDog.bark();
 		adamDog.bark();
@@ -20,5 +21,9 @@ public class DogTester {
 		zachDog.setAge(12);
 		System.out.println(zachDog.getAge());
 		
+		System.out.println(sarahDog.getOwner());
+		
+		zachDog.bark();
+		zachDog.bark(37);
 	}
 }

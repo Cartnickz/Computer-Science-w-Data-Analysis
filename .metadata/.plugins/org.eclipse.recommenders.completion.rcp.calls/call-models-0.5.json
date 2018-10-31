@@ -13,5 +13,10 @@
     "location": "Z:\\Eclipse_Workspace\\Chapter 4 Tracking Grades\\src",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027Z:\\Eclipse_Workspace\\Chapter 4 Tracking Grades\\src\u0027. Skipped."
+  },
+  "Z:\\Eclipse_Workspace\\Chapter 4 Book Inventory Project\\src": {
+    "location": "Z:\\Eclipse_Workspace\\Chapter 4 Book Inventory Project\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027Z:\\Eclipse_Workspace\\Chapter 4 Book Inventory Project\\src\u0027. Skipped."
   }
 }
