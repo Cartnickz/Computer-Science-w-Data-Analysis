@@ -6,8 +6,8 @@ public class BookInventory {
 	private int pageTotal;
 	private int copies;
 	private int ratingCount;
-	
-	
+
+
 	//constructor method for all info
 	public BookInventory(String bookTitle, double price, int pageTotal, int copies, double ratingAvg, int ratingCount) {
 		this.bookTitle = bookTitle;
@@ -16,8 +16,8 @@ public class BookInventory {
 		this.copies = copies;
 		this.ratingAvg = ratingAvg;
 		this.ratingCount = ratingCount;
-		}
-	
+	}
+
 	//secondary constructor
 	public BookInventory(String bookTitle, double price, int pageTotal) {
 		this.bookTitle = bookTitle;
@@ -27,38 +27,38 @@ public class BookInventory {
 		this.ratingAvg = 0;
 		this.ratingCount = 0;
 	}
-	
+
 	public void addInventory(int booksAdded) {
-		copies =+ booksAdded;
+		copies += booksAdded;
 	}
-	
+
 	public void sellInventory(int booksSold) {
-		copies =- booksSold;
+		copies -= booksSold;
 	}
-	
+
 	public void updateRating (int newRating) {
 		double totalRating = ratingAvg * ratingCount;
-		totalRating =+ newRating;
+		totalRating += newRating;
 		ratingCount++;
 		ratingAvg = totalRating / ratingCount;
 	}
-	
+
 	public String getBookTitle() {
 		return bookTitle;
 	}
-	
+
 	public int getCopies() {
 		return copies;
 	}
-	
+
 	public double getRating() {
 		return ratingAvg;
 	}
-	
+
 	public void setBookTitle(String newBookTitle) {
 		bookTitle = newBookTitle;
 	}
-	
+
 	public void setPageTotal(int newPageTotal) {
 		pageTotal = newPageTotal;
 	}
@@ -67,12 +67,12 @@ public class BookInventory {
 		double thresholdOver = price * 1.25;
 		double thresholdUnder = price * .75;
 		price = newPrice;
-		
+
 		if (newPrice > thresholdOver || newPrice < thresholdUnder) {
 			System.out.println("WARNING: Your price was very different from your original price.");
 		}
 	}
-	
+
 	public String toString() {
 		return "\nBook: " + bookTitle 
 				+ "\tPrice: " + price 
