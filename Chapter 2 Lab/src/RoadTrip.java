@@ -55,7 +55,7 @@ public class RoadTrip {
 				+ twoPlaces.format(totalMiles) + " miles.");
 
 		//total cost of the hotels assuming one person per room
-		double hotelTotal = hotelCost * days * headCount;
+		double hotelTotal = hotelCost * days;
 		System.out.println("\nHotel Cost: \t\t" + money.format(hotelTotal));
 
 		//total cost of the gas assuming all travelers in one car
